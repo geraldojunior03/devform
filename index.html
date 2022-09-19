@@ -8,6 +8,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="./assets/img/web-icon.svg" />
     <script src="./assets/js/script.js" defer></script>
 
+    <!-- APIs -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
     <title>DevForm | Formulário para DEVs</title>
 </head>
 <body>
@@ -28,27 +32,27 @@
                 <div class="input-group">
                     <div class="input-box">
                         <label for="firstname">Nome</label>
-                        <input type="text" name="Nome" id="firstname" placeholder="Digite seu nome" required>
+                        <input type="text" name="Nome" id="firstname" placeholder="Digite seu nome" autocomplete="off" maxlength="20" required>
                     </div>
                     <div class="input-box">
                         <label for="lastname">Sobrenome</label>
-                        <input type="text" name="Sobrenome" id="lastname" placeholder="Digite seu sobrenome" required>
+                        <input type="text" name="Sobrenome" id="lastname" placeholder="Digite seu sobrenome" autocomplete="off" maxlength="20" required>
                     </div>
                     <div class="input-box">
                         <label for="email">E-mail</label>
-                        <input type="email" name="E-mail" id="email" placeholder="Digite seu email" required>
+                        <input type="email" name="E-mail" id="email" placeholder="Digite seu email" autocomplete="off" maxlength="30" required>
                     </div>
                     <div class="input-box">
                         <label for="number">Celular</label>
-                        <input type="tel" name="Numero" id="number" placeholder="(xx) xxxx-xxxx" required>
+                        <input type="tel" name="Numero" id="number" placeholder="(xx) xxxx-xxxx" autocomplete="off" maxlength="11" onkeyup="mascara_celular()" required>
                     </div>
                     <div class="input-box">
                         <label for="password">Senha</label>
-                        <input type="password" name="Senha" id="password" placeholder="Digite sua senha" required>
+                        <input type="password" name="Senha" id="password" placeholder="Digite sua senha" autocomplete="off" maxlength="16" required>
                     </div>
                     <div class="input-box">
                         <label for="confirmpassword">Confirme sua senha</label>
-                        <input type="password" name="Confirmação de senha" id="confirmpassword" placeholder="Confirme sua senha" required>
+                        <input type="password" name="Confirmação de senha" id="confirmpassword" placeholder="Confirme sua senha" autocomplete="off" maxlength="16" required>
                     </div>
                 </div>
 
@@ -58,25 +62,25 @@
                     </div>
                     <div class="gender-group">
                         <div class="gender-input">
-                            <input type="radio" id="male" name="Masculino">
+                            <input type="radio" id="male" name="Sexo" value="Masculino">
                             <label for="male">Masculino</label>
                         </div>
                         <div class="gender-input">
-                            <input type="radio" id="female" name="Feminino">
+                            <input type="radio" id="female" name="Sexo" value="Feminino">
                             <label for="female">Feminino</label>
-                        </div>
+                        </div>                        
                         <div class="gender-input">
-                            <input type="radio" id="other" name="LGBTQIA+">
+                            <input type="radio" id="other" name="Sexo" value="LGBTQIA+">
                             <label for="other">LGBTQIA+</label>
                         </div>
                         <div class="gender-input">
-                            <input type="radio" id="none" name="Prefiro não dizer">
+                            <input type="radio" id="none" name="Sexo" value="Prefiro não dizer">
                             <label for="none">Prefiro não dizer</label>
                         </div>
                     </div>
                 </div>
 
-                <button class="continue-btn" type="submit">Continuar</button>
+                <button id="submit-btn" class="continue-btn" type="submit">Enviar</button>
             </form>
         </div>
     </div>
