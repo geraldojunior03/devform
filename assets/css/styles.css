@@ -99,7 +99,6 @@ body {
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
-    text-transform: capitalize;
 }
 
 .input-box input:hover {
@@ -118,6 +117,14 @@ body {
 
 .input-box input::placeholder {
     color: #000000be;
+}
+
+.input-box:nth-child(1) input, .input-box:nth-child(2) input{
+    text-transform: capitalize;
+}
+
+.input-box:nth-child(1) input::placeholder, .input-box:nth-child(2) input::placeholder{
+    text-transform: initial;
 }
 
 .gender-group {
