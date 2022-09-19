@@ -6,3 +6,5 @@ Olá, seja bem-vindo a meu projeto!! Este projeto foi realizado com intuito de t
 ### Sobre o projeto
 
 DevForm, um site de cadastro de pessoas desenvolvido em um plano de estudos realizado na plataforma YOUTUBE, onde eu estou estudando sobre a utilização de **APIs**, o sheetmoneky. Ainda estou aprimorando meus conhecimentos sobre utilizações de APIs.
+
+Neste projeto, ao realizar um cadastro, todas as informações inseridas no formulário, serão coletadas e adicionadas em uma planilha online. Desta forma, ao utilizar este realizar este cadastro, podemos ter acesso aos dados da pessoa que deseja entrar em nosso site.
