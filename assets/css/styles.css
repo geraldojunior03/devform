@@ -145,7 +145,7 @@ body {
     width: 100%;
     margin-top: 2.5rem;
     background-color: #6c63ff;
-    padding: .62rem;
+    padding: 1rem;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
@@ -155,6 +155,21 @@ body {
 
 .continue-btn:hover {
     background-color: #6b63fff1;
+}
+
+.loading {
+    width: 20px;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(0deg);
+    }
+    
+    from {
+        transform: rotate(360deg);
+    }
 }
 
 
